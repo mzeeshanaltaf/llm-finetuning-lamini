@@ -23,7 +23,7 @@ about_page = st.Page(
 )
 
 pg = st.navigation({
-    "Config": [config_page],
+    "Admin": [config_page],
     "Home": [finetune_page],
     "About": [about_page],
                     })
