@@ -16,4 +16,4 @@ with st.expander('Technologies Used'):
 with st.expander('Contact'):
     st.markdown(''' Any Queries: Contact [Zeeshan Altaf](mailto:zeeshan.altaf@92labs.ai)''')
 with st.expander('Source Code'):
-    st.markdown(''' Source code: [GitHub](https://github.com/mzeeshanaltaf/langflow-pdf-chat)''')
+    st.markdown(''' Source code: [GitHub](https://github.com/mzeeshanaltaf/llm-finetuning-lamini)''')
