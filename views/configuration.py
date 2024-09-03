@@ -7,6 +7,7 @@ lamini_supported_models = {'Llama 3.1': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
                            'Qwen 2': 'Qwen/Qwen2-7B-Instruct'}
 # SIDEBAR CONFIGURATION
 st.title("Configuration")
+
 st.session_state.lamini_api_key, st.session_state.app_activation = lamini_api_key_configuration()
 
 # Select the model to fine tune
