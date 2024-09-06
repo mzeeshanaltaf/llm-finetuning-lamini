@@ -1,4 +1,3 @@
-import streamlit as st
 from util import *
 
 lamini_supported_models = {'Llama 3.1': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
@@ -26,3 +25,5 @@ st.session_state.optimizer = st.selectbox('Select the optimizer to use', ('adafa
                                                                           'adamw_torch_fused', 'adamw_apex_fused',
                                                                           'adamw_anyprecision'),
                                           disabled=not st.session_state.app_activation)
+# Display footer
+display_footer()

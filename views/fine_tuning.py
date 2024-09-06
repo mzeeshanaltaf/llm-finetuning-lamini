@@ -86,9 +86,9 @@ if st.session_state.data is not None:
     fine_tune_button = st.button('Start Finetuning', type='primary', disabled=not st.session_state.app_activation)
     if fine_tune_button:
         st.session_state.job_status = llm.tune(data_or_dataset_id=st.session_state.data,
-                          finetune_args={'learning_rate': st.session_state.learning_rate,
-                                         'max_steps': st.session_state.max_steps,
-                                         'optim': st.session_state.optimizer})
+                                               finetune_args={'learning_rate': st.session_state.learning_rate,
+                                                              'max_steps': st.session_state.max_steps,
+                                                              'optim': st.session_state.optimizer})
         st.session_state.fine_tuning_start = True
         st.info('Tuning job submitted.')
 
@@ -110,5 +110,9 @@ if st.session_state.data is not None:
         })
 
         st.dataframe(df_job_status, column_config={
-           "Job Link": st.column_config.LinkColumn("Job Link", display_text=job_link),
+            "Job Link": st.column_config.LinkColumn("Job Link", display_text=job_link),
         }, hide_index=True, use_container_width=True)
+
+# Display footer
+display_footer()
+
